@@ -1,92 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event Registration Form</title>
     <style>
-        *{
+        body {
             background-color: rgb(255, 218, 218);
         }
     </style>
 </head>
+
 <body>
 
-<form action="" method="post">
+    <form action="" method="post">
 
-    <h1><u>Event Registration Form</u></h1>
-    <hr>
+        <h1><u>Event Registration Form</u></h1>
+        <hr>
+        <fieldset>
+            <legend>About this Event</legend>
+            <p>Event Name: MERN Stack Masterclass</p>
+            <p>Date: 18 November, 2025</p>
+            <p>Time: 2:00 PM - 4:00 PM</p>
+            <p>Speaker: Vikas Kumar</p>
+            <img src="data:image/jpeg;base64,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"
+                alt="">
+        </fieldset>
+        <hr>
+        <fieldset>
+            <legend>Participant Information</legend>
 
-    <h2><u>About this Event</u></h2>
-    <p>Event Name: MERN Stack Masterclass</p>
-    <p>Date: 18 November, 2025</p>
-    <p>Time: 2:00 PM - 4:00 PM</p>
-    <p>Speaker: Vikas Kumar</p>
-    <img src="data:image/jpeg;base64,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" alt="">
-    <hr>
+            <label for="name">Full Name: </label>
+            <input type="text" id="name" name="name" placeholder="Enter Full Name" required>
+            <br><br>
 
-    <h2><u>Participant Information</u></h2>
+            <label for="dob">Date of Birth: </label>
+            <input type="date" id="dob" name="dob" required>
+            <br><br>
 
-    <label for="name">Full Name: </label>
-    <input type="text" id="name" name="name" placeholder="Enter Full Name" required>
-    <br><br>
+            <label>Gender: </label>
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+            <br><br>
 
-    <label for="dob">Date of Birth: </label>
-    <input type="date" id="dob" name="dob" required>
-    <br><br>
+            <label for="phone">Phone Number: </label>
+            <input type="tel" id="phone" name="phone" required>
+            <br><br>
 
-    <label>Gender: </label>
-    <input type="radio" id="male" name="gender" value="Male" required>
-    <label for="male">Male</label>
-    <input type="radio" id="female" name="gender" value="Female">
-    <label for="female">Female</label>
-    <br><br>
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
 
-    <label for="phone">Phone Number: </label>
-    <input type="tel" id="phone" name="phone" required>
-    <br><br>
+            <label>Where did you hear about this event?</label><br>
+            <input type="radio" id="facebook" name="hear" value="Facebook" required>
+            <label for="facebook">Facebook</label>
+            <input type="radio" id="instagram" name="hear" value="Instagram">
+            <label for="instagram">Instagram</label>
+            <input type="radio" id="twitter" name="hear" value="Twitter">
+            <label for="twitter">Twitter</label>
+            <input type="radio" id="other" name="hear" value="Other">
+            <label for="other">Other:</label>
+            <input type="text" name="otherSource">
+            <br><br>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <legend>Payment Information</legend>
 
-    <label for="email">Email: </label>
-    <input type="email" id="email" name="email" required>
-    <br><br>
+            <label for="tickets">Number Of Tickets: </label>
+            <input type="number" id="tickets" name="tickets" min="1" required>
+            <br><br>
 
-    <label>Where did you hear about this event?</label><br>
-    <input type="radio" id="facebook" name="hear" value="Facebook" required>
-    <label for="facebook">Facebook</label>
-    <input type="radio" id="instagram" name="hear" value="Instagram">
-    <label for="instagram">Instagram</label>
-    <input type="radio" id="twitter" name="hear" value="Twitter">
-    <label for="twitter">Twitter</label>
-    <input type="radio" id="other" name="hear" value="Other">
-    <label for="other">Other:</label>
-    <input type="text" name="otherSource">
-    <br><br>
+            <label>Payment Methods: </label>
+            <input type="radio" id="creditcard" name="payment" value="Credit Card" required>
+            <label for="creditcard">Credit Card</label>
+            <input type="radio" id="debitcard" name="payment" value="Debit Card">
+            <label for="debitcard">Debit Card</label>
+            <input type="radio" id="cash" name="payment" value="Cash">
+            <label for="cash">Cash</label>
+            <input type="radio" id="check" name="payment" value="Check">
+            <label for="check">Check</label>
+            <br><br>
 
-    <hr>
-    <h2>Payment Information</h2>
+            <label for="signature">Signature: </label>
+            <input type="text" id="signature" name="signature" placeholder="Type your name" required>
+            <br><br>
+        </fieldset>
+        <input type="submit" value="Submit">
 
-    <label for="tickets">Number Of Tickets: </label>
-    <input type="number" id="tickets" name="tickets" min="1" required>
-    <br><br>
-
-    <label>Payment Methods: </label>
-    <input type="radio" id="creditcard" name="payment" value="Credit Card" required>
-    <label for="creditcard">Credit Card</label>
-    <input type="radio" id="debitcard" name="payment" value="Debit Card">
-    <label for="debitcard">Debit Card</label>
-    <input type="radio" id="cash" name="payment" value="Cash">
-    <label for="cash">Cash</label>
-    <input type="radio" id="check" name="payment" value="Check">
-    <label for="check">Check</label>
-    <br><br>
-
-    <label for="signature">Signature: </label>
-    <input type="text" id="signature" name="signature" placeholder="Type your name" required>
-    <br><br>
-
-    <input type="submit" value="Submit">
-
-</form>
+    </form>
 
 </body>
+
 </html>
