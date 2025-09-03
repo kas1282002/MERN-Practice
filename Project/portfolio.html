@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #1f242d;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .navbar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            padding: 25px 9%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .navbar .logo {
+            font-size: 30px;
+            font-weight: 700;
+        }
+
+        .navbar ul {
+            display: flex;
+        }
+
+        .navbar ul li {
+            list-style: none;
+            margin-left: 35px;
+        }
+
+        .navbar ul li a {
+            font-size: 20px;
+            font-weight: 500;
+            transition: .5s;
+        }
+
+        .navbar ul li:hover a,
+        .navbar ul li.active a {
+            color: #7cf03d;
+        }
+    </style>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo">Portfolio</a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="home">
+        <div class="home-info">
+            <h1>Krishna Sharma</h1>
+            <h2>I'm a Software Engineer</h2>
+            <p>
+                I’m a passionate and curious full-stack developer with hands-on experience building responsive,
+                real-world web applications using the MERN
+                stack and Firebase. I love turning ideas into clean, functional code and enjoy solving technical
+                challenges. With understanding of data
+                structures, algorithms, and modern tools, I’m eager to grow in a collaborative environment and
+                contribute to impactful tech solutions.
+            </p>
+            <div class="btn-sci">
+                <a href="#" class="btn">Download CV</a>
+                <div class="sci">
+                    <a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+</body>
+
+</html>
