@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Random Circle</title>
   <style>
@@ -9,6 +10,7 @@
       border: 2px solid black;
       position: relative;
     }
+
     .circle {
       width: 40px;
       height: 40px;
@@ -17,6 +19,7 @@
     }
   </style>
 </head>
+
 <body>
   <h3>Click inside the box</h3>
   <div id="box"></div>
@@ -24,12 +27,14 @@
   <script>
     let box = document.getElementById("box");
 
-    box.addEventListener("click", function(e) {
+    box.addEventListener("click", function (e) {
       let circle = document.createElement("div");
       circle.classList.add("circle");
+      console.log(circle);
+
 
       // Random color
-      let randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+      let randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
       circle.style.background = randomColor;
 
       // Position where clicked
@@ -40,4 +45,5 @@
     });
   </script>
 </body>
+
 </html>
